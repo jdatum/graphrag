@@ -56,3 +56,4 @@ docsite/
 
 # Jupyter notebook
 .ipynb_checkpoints/
+graphragdev/*
