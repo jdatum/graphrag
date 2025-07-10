@@ -57,3 +57,5 @@ docsite/
 # Jupyter notebook
 .ipynb_checkpoints/
 graphragdev/*
+voc_data/*
+voc_test/*
