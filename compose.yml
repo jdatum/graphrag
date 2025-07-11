@@ -11,7 +11,7 @@ services:
       - ./vertex_graphrag_test.py:/app/vertex_graphrag_test.py
       - ./secrets:/app/secrets
     working_dir: /app
-    env_file:
-      - GOOGLE_APPLICATION_CREDENTIALS=/app/secrets/vertex-ai-client.json
+    environment:
+        - GOOGLE_APPLICATION_CREDENTIALS=/app/secrets/vertex-ai-client.json
     command: poetry run python
     tty: true
