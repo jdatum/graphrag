@@ -1,0 +1,12 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./graphrag:/app/graphrag
+      - ./voc_test:/app/voc_test
+      - ./voc_data:/app/voc_data
+    working_dir: /app
+    command: poetry run python
+    tty: true
